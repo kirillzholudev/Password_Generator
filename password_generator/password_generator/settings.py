@@ -28,8 +28,6 @@ DEBUG = True
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '192.168.1.5']
 
 
-
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -72,8 +70,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'password_generator.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
     'default': {
@@ -82,9 +78,6 @@ DATABASES = {
     }
 }
 
-
-# Password validation
-# https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
     {

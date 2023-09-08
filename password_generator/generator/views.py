@@ -27,9 +27,9 @@ def generate_password(request):
 
 def generate_custom_password(password_settings):
     characters = string.ascii_lowercase
-    characters += string.ascii_uppercase if password_settings.use_uppercase else ""
-    characters += string.digits if password_settings.use_numbers else ""
-    characters += string.punctuation if password_settings.use_special_characters else ""
+    characters += string.ascii_uppercase if password_settings.uppercase else ""
+    characters += string.digits if password_settings.numbers else ""
+    characters += string.punctuation if password_settings.symbols else ""
 
     password = ''.join(random.choice(characters) for _ in range(password_settings.password_length))
 

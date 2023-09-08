@@ -5,7 +5,7 @@ from .models import PasswordSettings, SavedPassword
 class PasswordSettingsForm(forms.ModelForm):
     class Meta:
         model = PasswordSettings
-        fields = ['use_special_characters', 'use_uppercase', 'use_numbers', 'password_length']
+        fields = ['symbols', 'uppercase', 'numbers', 'password_length']
 
 
 class SavedPasswordForm(forms.ModelForm):

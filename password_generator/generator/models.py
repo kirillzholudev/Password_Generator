@@ -4,9 +4,9 @@ from django.db import models
 
 class PasswordSettings(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    use_special_characters = models.BooleanField(default=True)
-    use_uppercase = models.BooleanField(default=True)
-    use_numbers = models.BooleanField(default=True)
+    symbols = models.BooleanField(default=True)
+    uppercase = models.BooleanField(default=True)
+    numbers = models.BooleanField(default=True)
     password_length = models.PositiveIntegerField(default=12)
 
     def __str__(self):
