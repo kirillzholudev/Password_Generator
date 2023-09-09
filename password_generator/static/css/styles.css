@@ -188,6 +188,138 @@ input[readonly], textarea[readonly] {
 }
 
 
+/* login */
+
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.login-form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.login-form-group label {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.animated-input {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Общие стили для формы */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для заголовка формы */
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+/* Стили для группы полей формы */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Стили для меток полей формы */
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Стили для полей ввода формы */
+.form-input {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Стили для кнопки отправки формы */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+/* Стили для формы регистрации */
+.registration-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для группы полей */
+.registration-form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Стили для метки (label) полей */
+.registration-label {
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Стили для полей ввода */
+.registration-input {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Стили для кнопки */
+.registration-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.registration-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
 /* Медиазапрос для мобильных устройств */
 @media (max-width: 768px) {
     h2 {

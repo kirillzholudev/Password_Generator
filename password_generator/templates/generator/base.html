@@ -13,6 +13,9 @@
             <a href="{% url 'generate_password' %}">Сгенерировать пароли</a>
             <a href="{% url 'saved_passwords' %}">Мои пароли</a>
             <a href="{% url 'logout' %}">Выход</a>
+        {% else %}
+            <a href="{% url 'login' %}">Вход</a>
+            <a href="{% url 'registration' %}">Регистрация</a>
         {% endif %}
     </div>
 

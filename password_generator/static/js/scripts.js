@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
             // Если текущая кнопка не активна, устанавливаем ее активной
-            if (activeCopyButton !== this {
+            if (activeCopyButton !== this) {
                 activeCopyButton = this;
                 // Получаем пароль из атрибута data-password
                 var passwordToCopy = this.getAttribute("data-password");
@@ -37,4 +37,8 @@ document.addEventListener("DOMContentLoaded", function() {
             } else {
                 // Если текущая кнопка уже активна, сбрасываем активное состояние
                 activeCopyButton = null;
-
+                this.textContent = "Скопировать"; // Возвращаем текст "Скопировать"
+            }
+        });
+    });
+});

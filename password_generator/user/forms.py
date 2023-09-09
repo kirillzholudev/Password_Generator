@@ -9,3 +9,11 @@ class RegistrationForm(UserCreationForm):
     class Meta:
         model = User
         fields = ['username', 'email', 'password1', 'password2']
+
+    def __init__(self, *args, **kwargs):
+        super(RegistrationForm, self).__init__(*args, **kwargs)
+
+        # Устанавливаем классы CSS для полей и меток (label)
+        for field_name in self.fields:
+            self.fields[field_name].widget.attrs['class'] = 'registration-input'
+            self.fields[field_name].label = ''

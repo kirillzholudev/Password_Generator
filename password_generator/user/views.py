@@ -1,6 +1,7 @@
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, authenticate
 from django.shortcuts import render, redirect
+from django.contrib import messages
 
 from .forms import RegistrationForm
 
@@ -10,6 +11,7 @@ def home(request):
 
 
 def register(request):
+    user = None
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
         if form.is_valid():
@@ -18,7 +20,8 @@ def register(request):
             return redirect('generate_password')
     else:
         form = RegistrationForm()
-    return render(request, 'user/registration.html', {'form': form})
+
+    return render(request, 'user/registration.html', {'form': form, 'user': user})
 
 
 def user_login(request):
